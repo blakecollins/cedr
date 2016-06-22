@@ -1,0 +1,141 @@
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <!-- styles.css-->
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <!-- Block Grid for Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./block-grid.css"/>
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="header spacer">
+        <!-- navigation -->
+        <nav>
+            <div class="topNav">
+                <a href="/" class="logo"></a>
+                <div class="mainNav">
+                    <i class="fa fa-bars fa-inverse"></i>
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/coffee">coffees</a></li>
+                        <li><a href="/contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- slick slider -->
+    <div class="sliderContainer">
+        <div class="slider">
+            <div class="slide">
+                <div class="imgCont">
+                    <img src="http://res.cloudinary.com/cedr/image/upload/q_48/v1466535837/coffeeplant1_bbjg4d.jpg"/> 
+                </div>
+            </div>
+            <div class="slide">
+                <div class="imgCont">
+                    <img src="http://res.cloudinary.com/cedr/image/upload/q_2/v1466536217/coffee3_dltjyw.png"/>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="imgCont smallest">
+                    <img src="http://res.cloudinary.com/cedr/image/upload/q_48/v1466540419/coffeecup_sqlaxs.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="sliderNav">
+            <button class="slick-prev"></button>
+            <button class="slick-next"></button>
+        </div>
+    </div>
+    
+    <!-- Products -->
+    <section class="products-section">
+        <div class="product-wrapper">
+            <h1 class="product-title"> Pr<span class="o">o</span>ducts </h1>
+            <ul class="product-list row">
+                <li class="one active">
+                    <div class="imageBox">
+                        <img src="http://res.cloudinary.com/cedr/image/upload/c_scale,h_256/v1466617237/bag_ggfxpg.png" />
+                    </div>
+                    <h2 class="title-description"> The Blue</h2>
+                    <div class="descriptions">
+                        Maecenas malesuada erat vitae mauris volutpat molestie. Pellentesque eget tempor ex. Mauris ullamcorper luctus mi ut aliquet. 
+                        Pellentesque mattis neque arcu. Suspendisse vulputate pharetra magna, at ornare ex hendrerit hendrerit. Morbi volutpat commodo egestas.
+                        <br/><span class="price">$19.00</span>
+                    </div>
+                </li>
+                <li class="two">
+                    <div class="imageBox">
+                        <img src="http://res.cloudinary.com/cedr/image/upload/c_scale,h_256/v1466617237/bag4_h787qh.png" />
+                    </div>
+                    <h2 class="title-description"> The Green</h2>
+                    <div class="descriptions">
+                         Quisque nibh augue, egestas in augue at, dapibus tristique lacus. Praesent tristique magna sagittis varius molestie. 
+                         Auctor lorem urna, sit amet tincidunt erat laoreet nec.
+                         <br/><span class="price">$20.00</span>
+                    </div>
+                </li>
+                <li class="three">
+                    <div class="imageBox">
+                        <img src="http://res.cloudinary.com/cedr/image/upload/c_scale,h_256/v1466617237/bag2_wca37a.png" />
+                    </div>
+                    <h2 class="title-description"> The Orange</h2>
+                    <div class="descriptions">
+                        Praesent orci nunc, mollis non consequat nec, ultricies vel libero. Nunc at viverra tortor. 
+                        Vivamus ut turpis eget enim lacinia euismod nec quis enim. Sed imperdiet tristique hendrerit. 
+                        <br/><span class="price">$18.00</span>
+                    </div>
+                </li>
+                <li class="four">
+                    <div class="imageBox">
+                        <img src="http://res.cloudinary.com/cedr/image/upload/c_scale,h_256/v1466617237/bag3_cgr1iz.png" />
+                    </div>
+                    <h2 class="title-description"> The Grey</h2>
+                    <div class="descriptions">
+                        Vivamus lobortis iaculis dolor. Nulla nec mi tincidunt, venenatis sapien vitae, porta ligula. Vivamus sed placerat neque. Sed purus est, laoreet vel libero non.
+                        <br/><span class="price">$22.00</span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="heroPhoto2"></section>
+    <footer>
+        <div class="socialButtons">
+            <ul>
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- main.js -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

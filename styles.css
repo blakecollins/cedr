@@ -1,0 +1,523 @@
+/*fonts*/
+@import 'https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans';
+/*font-family: 'Didact Gothic', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+
+/*colors*/
+/*orange - #f4ba5c*/
+/*dark grey - #2f3034*/
+/*med. grey - #787878*/
+/*light grey - #C9C9CA*/
+/*white - #fff*/
+
+/*
+accents
+green - #A7FF66
+blue - #66FFBF
+
+*/
+
+h1 {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #fff;
+    font-size: 80px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+a, p, li {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    list-style: none;
+}
+
+header {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 110;
+}
+nav {
+    background-color: #fff;
+    padding-bottom: 3px;
+}
+
+.topNav {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: 70px;
+    margin-top: 70px;
+    transition: all .4s;
+}
+
+.mainNav li a {
+    font-size: 18px;
+}
+
+.mainNav {
+    transform: translateY(-50%);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.mainNav ul {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.mainNav li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.mainNav a {
+    color: #f4ba5c;
+}
+.mainNav a:hover {
+    text-decoration: none;
+    color: #f4ba5c;
+}
+
+.topNav .logo {
+    position: absolute;
+    top: 47%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url(http://res.cloudinary.com/cedr/image/upload/v1466536758/transparentlogo_ca1qlg.png);
+    width: 232px;
+    height: 100px;
+}
+
+/* Changing nav on scroll down */
+
+.navChange {
+    background-color: #2f3034;
+    z-index: 300;
+}
+
+.navChange .topNav {
+    margin-top: 0px;
+    background-color: #2f3034;
+}
+.navChange .logo {
+    background-image: url(http://res.cloudinary.com/cedr/image/upload/c_limit,h_75/v1466568657/invertLogo_hlbiqv.png);
+    height: 75px;
+    width: 69px;
+}
+.mainNav i {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .medium {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .topNav {
+        width: 80%;
+    }
+    .topNav, nav {
+        margin-top: 0px;
+        background-color: #2f3034;
+    }
+    .topNav .logo {
+        background-image: url(http://res.cloudinary.com/cedr/image/upload/c_scale,h_75,q_100/v1466568657/invertLogo_hlbiqv.png);
+        height: 75px;
+        width: 69px;
+    }
+    .mainNav i {
+        display: block;
+        font-size: 25px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .mainNav ul {
+        display: none;
+        position: absolute;
+        top: 52px;
+        right: -36px;
+        padding: 0px;
+        text-align: center;
+        background-color: #2f3034;
+    }
+    .mainNav.open ul {
+        display: block;
+    }
+    .mainNav li {
+        display: block;
+        padding: 10px;
+        
+    }
+    .mainNav li a {
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+/* Slick overwrites */
+.slick-next {
+    right: 15px;
+    z-index: 100;
+}
+.slick-prev {
+    left: 15px;
+    z-index: 100;
+}
+
+.imgCont {
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+.slide img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.slider {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.sliderContainer {
+    position: relative;
+}
+
+/* sections, text, images */
+
+.subHeader {
+    background-image: url(http://res.cloudinary.com/cedr/image/upload/v1466548992/cartographer_rq1t4m.png);
+    height: auto;
+    text-align: center;
+    padding: 0px 180px;
+}
+.productOne {
+    flex-wrap: wrap;
+    display: flex;
+}
+.o {
+    color: #f4ba5c;
+}
+
+.subHeader p {
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+.light {
+    background-color:#FFF;
+    display: flex;
+    background-image: url(http://res.cloudinary.com/cedr/image/upload/v1466612529/cartographerwhite_bpgjk1.png);
+}
+.light p {
+    color: #333;
+}
+.light p:after {
+    content: '';
+    border-bottom: 4px dashed #f4ba5c;
+    display: block;
+    width: 60px;
+    padding-top: 20px;
+}
+.light h4 {
+    color: #333;
+    text-decoration: underline;
+}
+.medium {
+   background-color: #787878;
+   display: flex;
+}
+.medium img {
+    margin: 0 auto;
+}
+.dark {
+    background-color: #2f3034;
+    display: flex;
+}
+.orange {
+    background-color: #f4ba5c;
+    display: flex;
+}
+.circle {
+	border-radius: 50%;
+	width: 320px;
+	height: 320px; 
+	border-color: #f4ba5c;
+	background-color: transparent;
+	border-style: dashed;
+	margin: 0 auto;
+	margin-bottom: 13px;
+	transition: all .4s;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.circle:hover {
+    background-color: #f4ba5c;
+    
+}
+.circle span {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .4s;
+}
+.circle:hover span {
+    top: 50%;
+    opacity: 1;
+}
+.light article { 
+    padding: 100px;
+}
+
+/* location */
+.map {
+    background-image: url(http://res.cloudinary.com/cedr/image/upload/v1466548992/cartographer_rq1t4m.png);
+}
+.map img {
+    padding: 40px 50px;
+}
+.directions {
+    padding: 100px 170px;
+}
+.directions h4 {
+    color: #f4ba5c;
+    text-decoration: underline;
+}
+
+.heroPhoto {
+    background: url(http://res.cloudinary.com/cedr/image/upload/c_limit,e_grayscale,h_1061/v1466606962/Coffee-Beans_ssjjzr.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+.heroPhoto2 {
+    background: url(http://res.cloudinary.com/cedr/image/upload/v1466625764/espresso_b3k8yq.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+.heroPhoto2 {
+    background: url(http://res.cloudinary.com/cedr/image/upload/c_scale,q_50,w_2097/v1466609044/Dorm1_1_of_1_-3_qj1xfc.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+
+@media (max-width: 992px) {
+    .map {
+        padding: 20px;
+    }
+    .directions {
+        padding: 60px 110px;
+    }
+    .map img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .subHeader {
+        padding: 0px 70px;
+    }
+    .subHeader p {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .directions {
+        padding: 60px 40px;
+    }
+    .map img {
+        height: 300px;
+    }
+}
+/* Footer */
+.socialButtons {
+    background-color: #2f3034;
+    text-align: center;
+    height: 75px;
+}
+.socialButtons ul {
+    margin: 0px;
+    line-height: 75px;
+}
+.socialButtons i {
+    height: 25px;
+    width: 35px;
+    color: #fff;
+    transition: all .4s;
+}
+.socialButtons li {
+    width: 75px;
+    display: inline-block;
+}
+.socialButtons li:hover i {
+    color: #f4ba5c;
+}
+
+.bottomFooter {
+    text-align: center;
+}
+
+/* Products */
+.products-section {
+    background-image: url(http://res.cloudinary.com/cedr/image/upload/v1466548992/cartographer_rq1t4m.png);
+    width: 100%;
+    min-height: 700px;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.products-section:before{
+    content: '';
+    display: block;
+    width: 100%;
+    border-top: 2px dashed #f4ba5c;
+    position: absolute;
+    top: 0px;
+}
+.products-section:after{
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 2px dashed #f4ba5c;
+    position: absolute;
+    bottom: 0px;
+}
+.product-title {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+.product-title:after {
+    content: '';
+    display: block;
+    border-bottom: 2px dashed #f4ba5c;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93px;
+}
+
+.product-list {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.product-list li {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+.products-section .descriptions {
+    position: absolute;
+    left: 0px;
+    bottom: -140px;
+    display: none;
+    padding: 0px 100px;
+} 
+.active .descriptions {
+    display: block;
+}
+
+.one.active .title-description, .one .price {
+    color: #2b98d4;
+}
+.two.active .title-description, .two .price {
+    color: #a7ff66;
+}
+.three.active .title-description, .three .price {
+    color: #f4ba5c;
+}
+.four.active .title-description, .four .price {
+    color: #787878;
+}
+
+@media (max-width: 992px) {
+    .imageBox img {
+        height: 150px;
+    }
+    .product-list {
+        top: 35%;
+    }
+    .product-list li {
+        padding: 0px 10px;
+    }
+    .products-section .descriptions {
+        bottom: -210px;
+        font-size: 21px;
+    }
+}
+@media (max-width: 768px) {
+    .product-list {
+        position: relative;
+        left: initial;
+        top: initial;
+        transform: initial;
+    }
+    .products-section .descriptions {
+        position: relative;
+        bottom: initial;
+        left: initial;
+        font-size: 21px;
+        padding: 0px 20px;
+    }
+    .product-list li {
+        padding: 0px 10px;
+        width: 100%;
+    }
+}
+
+/* Contact Page */
+
+.contact-container {
+    background-image: url(http://res.cloudinary.com/cedr/image/upload/v1466612529/cartographerwhite_bpgjk1.png);
+}
+.contact-container .well {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.contact-container .btn-warning {
+    background-color: #f4ba5c;
+    border-color: #f4ba5c;
+}

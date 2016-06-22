@@ -1,0 +1,144 @@
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <!-- styles.css-->
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <!-- Block Grid for Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./block-grid.css"/>
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="header spacer">
+        <!-- navigation -->
+        <nav>
+            <div class="topNav">
+                <a href="/" class="logo"></a>
+                <div class="mainNav">
+                    <i class="fa fa-bars fa-inverse"></i>
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/coffee">coffees</a></li>
+                        <li><a href="/contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- slick slider -->
+    <div class="sliderContainer">
+        <div class="slider">
+            <div class="slide">
+                <div class="imgCont">
+                    <img src="http://res.cloudinary.com/cedr/image/upload/q_48/v1466535837/coffeeplant1_bbjg4d.jpg"/> 
+                </div>
+            </div>
+            <div class="slide">
+                <div class="imgCont">
+                    <img src="http://res.cloudinary.com/cedr/image/upload/q_2/v1466536217/coffee3_dltjyw.png"/>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="imgCont smallest">
+                    <img src="http://res.cloudinary.com/cedr/image/upload/q_48/v1466540419/coffeecup_sqlaxs.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="sliderNav">
+            <button class="slick-prev"></button>
+            <button class="slick-next"></button>
+        </div>
+    </div>
+    
+    <!-- Contact Form -->
+    <div class="contact-container">
+        <div class="container">
+          <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
+              <legend>Share your thoughts with us</legend>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">First Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-4 control-label">Last Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">E-Mail</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+                <!-- Text Box -->  
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Message</label>
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        	<textarea class="form-control" name="comment" placeholder="Message..."></textarea>
+                  </div>
+                  </div>
+                </div>
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                      <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <section class="heroPhoto3"></section>
+    <footer>
+        <div class="socialButtons">
+            <ul>
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- main.js -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
