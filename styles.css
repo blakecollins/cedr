@@ -521,3 +521,9 @@ nav {
     background-color: #f4ba5c;
     border-color: #f4ba5c;
 }
+.contact {
+    text-align: center;
+    padding: 10px 0px;
+    background-image: url(http://res.cloudinary.com/cedr/image/upload/v1466548992/cartographer_rq1t4m.png);
+    color: #fff;
+}
